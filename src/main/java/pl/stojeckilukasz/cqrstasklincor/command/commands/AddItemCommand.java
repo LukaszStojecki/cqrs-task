@@ -1,18 +1,16 @@
-package pl.stojeckilukasz.cqrstasklincor.command.dto;
+package pl.stojeckilukasz.cqrstasklincor.command.commands;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 import java.util.UUID;
 
 
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@Getter
-@Builder
+@AllArgsConstructor
 public class AddItemCommand {
 
     @TargetAggregateIdentifier

@@ -9,5 +9,4 @@ public class CqrsTaskLincorApplication {
     public static void main(String[] args) {
         SpringApplication.run(CqrsTaskLincorApplication.class, args);
     }
-
 }

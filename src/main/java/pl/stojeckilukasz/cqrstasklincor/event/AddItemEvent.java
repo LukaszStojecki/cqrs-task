@@ -1,16 +1,13 @@
 package pl.stojeckilukasz.cqrstasklincor.event;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.Data;
 
 import java.util.UUID;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
+
+@Data
 public class AddItemEvent {
 
-    private UUID id;
-    private String name;
+    private final UUID id;
+    private final String name;
 }

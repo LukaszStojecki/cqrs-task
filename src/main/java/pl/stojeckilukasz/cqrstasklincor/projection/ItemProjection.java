@@ -22,7 +22,7 @@ public class ItemProjection {
 
     @EventHandler
     public void on(AddItemEvent addItemEvent) {
-        log.debug("Handling a Add Item command {}", addItemEvent.getClass().getName());
+        log.debug("Handling a Add Item command {}", addItemEvent.getId());
         Item item = new Item(
                 addItemEvent.getId(),
                 addItemEvent.getName()

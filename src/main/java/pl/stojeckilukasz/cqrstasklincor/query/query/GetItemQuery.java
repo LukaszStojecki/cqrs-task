@@ -1,12 +1,12 @@
 package pl.stojeckilukasz.cqrstasklincor.query.query;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetItemQuery {
