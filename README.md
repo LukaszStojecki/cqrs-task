@@ -7,7 +7,8 @@
 
 
 ## Informacje ogólne
-Aplikacja z wykorzystaniem wzorca CQRS, posiadająca  dwie metody.
+Aplikacja z wykorzystaniem wzorca CQRS + DDD + EventSourcing dla lepszej wydajności. 
+Aplikacja posiadająca  dwie metody.
 
 [POST] AddItem (ID-GUID, Name) - rozkaz (command)
 [GET] GetItem (ID-GUID) - zapytanie (query)
