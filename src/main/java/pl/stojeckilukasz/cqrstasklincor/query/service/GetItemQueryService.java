@@ -7,8 +7,9 @@ import org.springframework.stereotype.Service;
 import pl.stojeckilukasz.cqrstasklincor.query.model.Item;
 import pl.stojeckilukasz.cqrstasklincor.query.query.GetItemQuery;
 
-import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
+
+import static pl.stojeckilukasz.cqrstasklincor.query.service.ServiceUtils.formatUuid;
 
 @Service
 @AllArgsConstructor
@@ -16,9 +17,9 @@ public class GetItemQueryService {
 
     private final QueryGateway queryGateway;
 
-    public CompletableFuture<Item> findById(UUID itemId) {
+    public CompletableFuture<Item> findById(String id) {
         return queryGateway.query(
-                new GetItemQuery(itemId),
+                new GetItemQuery(formatUuid(id)),
                 ResponseTypes.instanceOf(Item.class)
         );
     }
